@@ -1,9 +1,9 @@
-<h1 align="center">:file_cabinet: Dashboard com Angular</h1>
+<h1 align="center">Dashboard com Angular</h1>
 
 ## :memo: Descrição
 O projeto consiste na utilização do framework Angular para o desenvolvimento de um sistema de informações de veículos com três interfaces: login, home e dashboard. As informações dos veículos são disponibilizadas por um back-end em formato de API Rest.
 
-![Sistema](https://j.gifs.com/qQmD3G.gif)
+<img src="https://j.gifs.com/qQmD3G.gif" style="width: 70%;">
 
 ## :mag_right: Nesse projeto você encontra:
 * <b>Aquisição de nome e senha</b>: O módulo de login busca dados dos usuários cadastrados no back-end e gera autenticação no sistema; 
@@ -11,9 +11,11 @@ O projeto consiste na utilização do framework Angular para o desenvolvimento d
 * <b>Comunicação com back-end</b>: O sistema implementa serviços Angular para se comunicar com o back-end;
 * <b>Card com campo de busca por nome</b>: Em um card com _select_, o módulo de dashboard apresenta informações de acordo com o nome do veículo selecionado;
 * <b>Tabela com campo de busca por código</b>: Em um tabela com _input_, o módulo de dashboard permite o usuário entrar com o código Vin do veículo e encontrar informações;
-* <b>Guardas de rotas</b>: O sistema utiliza _route guards_ para controlar o fluxo de navegação;
-![Guarda de Rota](https://j.gifs.com/mqgGor.gif)
 * <b>Interceptor</b>: O sistema intercepta solicitações HTTP para incluir token de acesso;
+* <b>Guardas de rotas</b>: O sistema utiliza _route guards_ para controlar o fluxo de navegação;
+  
+  <img src="https://j.gifs.com/mqgGor.gif" style="width: 70%;">
+
 
 ## :wrench: Tecnologias utilizadas
 * Framework Angular
