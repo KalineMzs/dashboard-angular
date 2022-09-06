@@ -1,0 +1,46 @@
+<app-cabecalho></app-cabecalho>
+<h1 class="titulo">Dashboard FORD</h1>
+
+<div class="container" *ngIf="veiculos">
+	<div class="row">
+		<div class="col">
+			<app-cartao titulo="Veículo">
+				<select
+					name="selectVeiculos"
+					id="selectVeiculos"
+					[(ngModel)]="veiculoId"
+					(ngModelChange)="onSelect()"
+				>
+					<option
+						*ngFor="let veiculo of veiculos"
+						[value]="veiculo.id"
+					>
+						{{ veiculo.vehicle }}
+					</option>
+				</select>
+			</app-cartao>
+		</div>
+
+		<div class="col">
+			<app-cartao titulo="Total de vendas">
+				{{ veiculo.volumetotal }} Unid.
+			</app-cartao>
+		</div>
+
+		<div class="col">
+			<app-cartao titulo="Conectados">
+				{{ veiculo.connected }} Unid.
+			</app-cartao>
+		</div>
+
+		<div class="col">
+			<app-cartao titulo="Update Software">
+				{{ veiculo.softwareUpdates }} Unid.
+			</app-cartao>
+		</div>
+	</div>
+
+	<app-imagem [id]="imagemId"></app-imagem>
+
+	<app-tabela></app-tabela>
+</div>

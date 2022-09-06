@@ -1,0 +1,19 @@
+<div class="row rowContainer">
+	<div class="col-md-7 imgContainer">
+		<img src="../assets/img/home.png"/>
+	</div>
+
+	<div class="col text-secondary">
+		<po-page-login
+			(p-login-submit)="onloginSubmit($event)"
+			[p-loading]="isLoading"
+			[p-logo]="logo"
+			[p-literals]="customLiterals"
+			[p-hide-remember-user]="true"
+			[p-login-errors]="[]"
+			[p-password-errors]="[]"
+			[p-languages]='language'
+		>
+		</po-page-login>
+	</div>
+</div>

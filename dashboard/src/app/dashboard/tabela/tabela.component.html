@@ -1,0 +1,39 @@
+<table class="table text-primary">
+	<thead>
+		<tr>
+			<th scope="col">Código - Vin</th>
+			<th scope="col">Odômetro</th>
+			<th scope="col">Nível de combustível</th>
+			<th scope="col">Status</th>
+			<th scope="col">Lat.</th>
+			<th scope="col">Long.</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<input
+					type="text"
+					name="vinName"
+					[formControl]="vinInput"
+					placeholder="Digite o código Vin"
+				/>
+			</td>
+			<ng-container *ngIf="!(vinVazio) && (vin$ | async) as vin; else body">
+				<td>{{ vin.odometer }} km</td>
+				<td>{{ vin.fuelLevel }} %</td>
+				<td>{{ vin.status }}</td>
+				<td>{{ vin.lat }}</td>
+				<td>{{ vin.long }}</td>
+			</ng-container>
+		</tr>
+	</tbody>
+</table>
+
+<ng-template #body>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</ng-template>

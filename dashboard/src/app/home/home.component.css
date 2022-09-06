@@ -1,0 +1,11 @@
+.background {
+	/*background-image: url();*/
+	background: #FFFFFF url('src/assets/img/home.png') no-repeat center;
+	height: 70vh;
+	margin: 4em;
+}
+
+.cardContainer {
+	min-height: 45vh;
+	min-width: 80vh;
+}

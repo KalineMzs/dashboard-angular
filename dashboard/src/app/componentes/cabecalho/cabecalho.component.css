@@ -1,0 +1,22 @@
+.menu, .logout {
+	cursor: pointer;
+}
+
+ul {
+	font-weight: bold;
+}
+
+.imgMenu {
+	width: 30%;
+	margin: 1em;
+}
+
+.liMenu {
+	padding: 1em;
+	background-color: #dcdcdc;
+}
+
+
+
+
+

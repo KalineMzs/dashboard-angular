@@ -1,0 +1,31 @@
+<header class="sticky-top">
+	<nav class="navbar navbar-light bg-white">
+		<a class="navbar-brand">
+			<i
+				class="fa fa-bars ml-5 menu"
+				(click)="menu.abreMenu()"
+				(keyup.space)="menu.abreMenu()"
+			></i>
+		</a>
+
+		<app-menu #menu>
+			<ul class="list-unstyled">
+				<li>
+					<img src="./../../assets/img/ford.png" class="imgMenu"/>
+				</li>
+
+				<li class="liMenu">
+					<a [routerLink]="['/home']">Home</a>
+				</li>
+				<li  class="liMenu">
+					<a [routerLink]="['dashboard']">Dashboard</a>
+				</li>
+			</ul>
+		</app-menu>
+
+		<div *ngIf="user$ | async as user">
+			<i class="fa fa-user-circle mr-1"></i>
+			<a (click)="logout()" class="pr-5 logout">Logout</a>
+		</div>
+	</nav>
+</header>
