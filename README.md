@@ -42,8 +42,9 @@ npm start
 ~~~
   * Os dados estarão disponíveis em <http://localhost:3000/>;
   * A API deve estar rodando durante a execução da aplicação.
-3. Vá ao diretório _dashboard_ do projeto e execute o seguinte comando:
+3. Vá ao diretório _dashboard_ do projeto, instale as dependências e execute a aplicação:
 ~~~
+npm install
 ng serve --o
 ~~~
   * O comando irá abrir a aplicação no seu navegador!
